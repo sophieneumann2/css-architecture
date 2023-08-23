@@ -24676,7 +24676,7 @@ const Button = ({
 }) => {
   return _react.default.createElement("button", {
     className: "dse-button-container"
-  }, label);
+  }, label || "Button");
 };
 exports.default = Button;
 },{"react":"../../../node_modules/react/index.js"}],"../../../node_modules/@css-architecture/react/lib/index.js":[function(require,module,exports) {
@@ -24744,7 +24744,7 @@ function reloadCSS() {
   }, 50);
 }
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../../node_modules/@css-architecture/scss/lib/Button.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../../node_modules/@css-architecture/scss/lib/Utilities.css":[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -24756,13 +24756,13 @@ module.exports = reloadCSS;
 var _react = _interopRequireDefault(require("react"));
 var _reactDom = _interopRequireDefault(require("react-dom"));
 var _lib = require("@css-architecture/react/lib");
-require("@css-architecture/scss/lib/Button.css");
+require("@css-architecture/scss/lib/Utilities.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-_reactDom.default.render(_react.default.createElement(_lib.Button, {
-  label: "Example Hello Button"
+_reactDom.default.render(_react.default.createElement(_lib.Color, {
+  hexCode: '#000'
 }), document.querySelector('#root'));
 // <Select label='Please select a size' onOptionSelected={console.log} options={[{ label: '', value: '' }]} />
-},{"react":"../../../node_modules/react/index.js","react-dom":"../../../node_modules/react-dom/index.js","@css-architecture/react/lib":"../../../node_modules/@css-architecture/react/lib/index.js","@css-architecture/scss/lib/Button.css":"../../../node_modules/@css-architecture/scss/lib/Button.css"}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../../../node_modules/react/index.js","react-dom":"../../../node_modules/react-dom/index.js","@css-architecture/react/lib":"../../../node_modules/@css-architecture/react/lib/index.js","@css-architecture/scss/lib/Utilities.css":"../../../node_modules/@css-architecture/scss/lib/Utilities.css"}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -24787,7 +24787,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60194" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55739" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
