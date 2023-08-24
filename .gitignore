@@ -2,3 +2,9 @@ node_modules/
 /yarn.lock
 .idea
 yarn-error.log
+packages/foundation/lib
+packages/foundation/node_modules
+packages/react/lib
+packages/react/node_modules
+packages/scss/lib
+packages/scss/node_modules
